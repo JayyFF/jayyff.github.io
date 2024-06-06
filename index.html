@@ -4,24 +4,39 @@
     <title>Jaedyn's Website</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
-     <body>
-    <div>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="all-contents">
+      
       <nav>
-        <a href="/">Home</a> <a href="/">Portfolio</a>
+        <h1>Jaedyn's First Website</h1>
 
+        <ul id="nav-ul">
+          <li class="nav-li">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="nav-li">
+            <a href="portfolio.html">Portfolio</a>
+          </li>
+        </ul>
       </nav>
       <main>
-        <div>
-          <h1> Jaedyn's First Website</h1>
+        <div class="sidebar">
+          <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmQ98DyTo24rXa-m3EnoL6FNmlATNvBvWnUQ&s">
+        </div>
+        <div class="content">
           <h1>Jaedyn Coffiel</h1>
-          <img src=data:image/png;base64,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>
-            <h3><b><i>Interests</i></b></h3>
+          <div id="interests">
+              <b><i>Interests</i></b>
+            </h3>
             <p>Computer Sience</p>
             <p>Dropshipping</p>
             <p>Basketball</p>
             <p>Video Games</p>
           </div>
+        </div>
       </main>
     </div>
   </body>
